@@ -9,5 +9,5 @@ def index(request):
     return render(request, 'rango/index.html', context=context_dict)
 
 def about(request):
-    context = {'aboutmessage': "Welcome! Here Rango tells about the project!"}
+    context = {'aboutmessage': "Welcome! Here Rango tells about the project!", 'creator': "This project has been set up by TimL"}
     return render(request, 'rango/about.html', context=context)
